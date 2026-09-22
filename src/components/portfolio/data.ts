@@ -1,0 +1,44 @@
+import emailImage from "@/assets/project-email.jpg";
+import resumeImage from "@/assets/project-resume.jpg";
+import supportImage from "@/assets/project-support.jpg";
+import voiceImage from "@/assets/project-voice.jpg";
+import analyticsImage from "@/assets/project-analytics.jpg";
+
+export const navigation = ["Home", "About", "Education", "Experience", "Projects", "Skills", "Publications", "Certifications", "Resume", "Contact"];
+
+export const socialProfiles = ["LinkedIn", "GitHub", "Kaggle", "HackerRank", "Hack2Skill", "Google Developer", "Google Skills"];
+
+export const education = [
+  { institution: "Savitribai Phule Pune University (SPPU)", qualification: "B.E. in Artificial Intelligence & Data Science", period: "2024 – Present", location: "Pune, India" },
+  { institution: "HSC (12th Grade)", qualification: "First Class", period: "2023 – 2024", location: "Maharashtra, India" },
+];
+
+export const experiences = [
+  { company: "Infosys Springboard", role: "Artificial Intelligence Intern", period: "Feb 2026 – Apr 2026", location: "Remote", points: ["Built AI and Generative AI projects using Python, TensorFlow, PyTorch, NumPy, and Scikit-learn.", "Developed an Email Classification AI Agent using Prompt Engineering and Large Language Models (LLMs).", "Improved AI model performance through evaluation, testing, and iterative optimization.", "Worked on AI Agents and real-world Generative AI applications."] },
+  { company: "IBM SkillsBuild", role: "AIML Intern", period: "Dec 2025 – Jan 2026", location: "Remote", points: ["Built Machine Learning models using Python on real-world datasets.", "Performed preprocessing, analysis, and evaluation using AI/ML techniques.", "Completed internship onboarding and AI learning modules successfully."] },
+  { company: "Google Student Ambassador", role: "Campus Representative", period: "Sept 2025 – Feb 2026", location: "Remote", points: ["Promoted awareness and adoption of Google AI tools among students.", "Explored AI platforms including Google Gemini and emerging AI technologies."] },
+  { company: "Elevate Labs", role: "Data Analyst Intern", period: "Sept 2025 – Nov 2025", location: "Remote", points: ["Built Power BI dashboards for KPI tracking and business insights.", "Used Python, Pandas, Excel, and Power BI for data analysis and visualization."] },
+];
+
+export const categories = ["All", "Artificial Intelligence", "Machine Learning", "Generative AI", "AI Agents", "Data Science", "Data Analytics", "Automation"];
+
+export const projects = [
+  { title: "Ambient Email Assistant", subtitle: "AI Agent", year: "2026", description: "An intelligent AI email assistant designed for automated email processing and workflow automation.", technologies: ["Python", "LLMs", "NLP", "Automation"], categories: ["Artificial Intelligence", "Generative AI", "AI Agents", "Automation"], features: ["Gmail API / IMAP email processing", "Entity extraction and sentiment analysis", "Category-wise classification and response generation", "Flask / FastAPI interactive prototype"], image: emailImage },
+  { title: "FindInternship", subtitle: "AI + ATS Resume Analyzer", year: "2026", description: "An AI-powered platform for resume analysis, ATS scoring and personalized internship recommendations.", technologies: ["Python", "LLMs", "NLP", "FastAPI", "PostgreSQL"], categories: ["Artificial Intelligence", "Machine Learning", "Generative AI", "Data Science"], features: ["Resume upload and ATS scoring", "Skill and experience extraction", "LLM-based resume suggestions", "Internship recommendations and tracking dashboard"], image: resumeImage },
+  { title: "SmartHelp AI", subtitle: "Enterprise Support Agent", year: "2026", description: "An autonomous AI customer support agent designed to perform reasoning, task execution and decision-making workflows.", technologies: ["Python", "AI Agents", "Kaggle"], categories: ["Artificial Intelligence", "Generative AI", "AI Agents"], features: ["Kaggle AI Agents framework", "Autonomous reasoning and task execution", "Prompt Engineering and evaluation metrics", "Kaggle AI Agents Capstone badge"], image: supportImage },
+  { title: "JARVIS AI Control", subtitle: "Voice Automation", year: "2025", description: "A voice-controlled AI assistant designed for automation and system-level tasks.", technologies: ["Python", "Speech Recognition", "TTS"], categories: ["Artificial Intelligence", "Automation"], features: ["Speech recognition and text-to-speech", "Real-time voice interaction", "Automation and system tasks", "Modular architecture for future expansion"], image: voiceImage },
+  { title: "YouTube Trending Video Analytics", subtitle: "Audience Intelligence", year: "2025", description: "A data analytics project focused on understanding trending video behavior and audience engagement.", technologies: ["Python", "Pandas", "Power BI"], categories: ["Data Science", "Data Analytics"], features: ["Trending dataset analysis", "Views, likes, categories and posting behavior", "Statistical engagement analysis", "Power BI dashboards and virality insights"], image: analyticsImage },
+];
+
+export const skills = [
+  { group: "Languages", items: ["Python", "C", "SQL"] },
+  { group: "Libraries", items: ["Pandas", "NumPy", "Scikit-learn", "SciPy", "TensorFlow", "PyTorch"] },
+  { group: "AI / ML", items: ["Machine Learning", "Artificial Intelligence", "Prompt Engineering", "LLMs", "Generative AI", "AI Agents"] },
+  { group: "Databases", items: ["MySQL"] },
+  { group: "Tools", items: ["Power BI", "Git", "GitHub", "Google Colab", "VS Code", "PyCharm", "Eclipse", "IntelliJ IDEA"] },
+  { group: "Behavioral Skills", items: ["Leadership", "Team Player", "Analytical Thinking", "Eagerness to Learn"] },
+];
+
+export const certifications = [
+  ["Artificial Intelligence", "Infosys"], ["Prompt Engineering", "Infosys"], ["Introduction to Generative AI", "Google Cloud"], ["Getting Started with Generative AI", "IBM SkillsBuild"], ["GenAI Powered Data Analytics", "Tata"], ["5-Day Gen AI Intensive Course", "Google"], ["Google Student Ambassador Certification", "Google"], ["Online Python Training Course", ""],
+] as const;
