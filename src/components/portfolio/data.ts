@@ -6,7 +6,17 @@ import analyticsImage from "@/assets/project-analytics.jpg";
 
 export const navigation = ["Home", "About", "Education", "Experience", "Projects", "Skills", "Publications", "Certifications", "Resume", "Contact"];
 
-export const socialProfiles = ["LinkedIn", "GitHub", "Kaggle", "HackerRank", "Hack2Skill", "Google Developer", "Google Skills"];
+export type SocialProfile = { label: string; url?: string };
+
+export const socialProfiles: SocialProfile[] = [
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/nilesh-chatap-967101348" },
+  { label: "GitHub", url: "https://github.com/" },
+  { label: "Kaggle", url: "https://kaggle.com/nileshchatap" },
+  { label: "HackerRank", url: "https://www.hackerrank.com/profile/nileshchatap25" },
+  { label: "Hack2Skill", url: "https://bit.ly/hack2skill-user" },
+  { label: "Google Developer", url: "https://g.dev/nileshchatap" },
+  { label: "Google Skills", url: "https://www.skills.google/public_profiles/f019ff51-59d7-4290-ab48-1fd51cf04b2e" },
+];
 
 export const education = [
   { institution: "Savitribai Phule Pune University (SPPU)", qualification: "B.E. in Artificial Intelligence & Data Science", period: "2024 – Present", location: "Pune, India" },

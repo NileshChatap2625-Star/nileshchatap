@@ -35,9 +35,13 @@ function SocialLinks({ centered = false }: { centered?: boolean }) {
     <div className={`social-links ${centered ? "justify-center" : ""}`} aria-label="Professional profiles">
       {socialProfiles.map((profile, index) => {
         const Icon = icons[index] ?? ExternalLink;
-        return (
-          <button key={profile} type="button" className="social-button" disabled title={`${profile} link has not been added yet`} aria-label={`${profile} — link not added`}>
-            <Icon /><span>{profile}</span>
+        return profile.url ? (
+          <a key={profile.label} href={profile.url} target="_blank" rel="noopener noreferrer" className="social-button" aria-label={`${profile.label} profile (opens in a new tab)`}>
+            <Icon /><span>{profile.label}</span>
+          </a>
+        ) : (
+          <button key={profile.label} type="button" className="social-button" disabled title={`${profile.label} link has not been added yet`} aria-label={`${profile.label} — link not added`}>
+            <Icon /><span>{profile.label}</span>
           </button>
         );
       })}
