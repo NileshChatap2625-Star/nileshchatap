@@ -1,3 +1,4 @@
+import resumeAsset from "@/assets/Nilesh_Chatap_Resume.pdf.asset.json";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import {
   ArrowDown, ArrowRight, Award, BookOpen, BriefcaseBusiness, CheckCircle2,
@@ -94,7 +95,7 @@ function Hero() {
           <p className="hero-intro">Building intelligent solutions with Artificial Intelligence, Machine Learning, Generative AI and Data Analytics.</p>
           <div className="hero-actions">
             <Button variant="premium" size="lg" asChild><a href="#projects">View My Projects <ArrowRight /></a></Button>
-            <Button variant="outline" size="lg" disabled title="Resume PDF has not been uploaded"><Download /> Download Resume</Button>
+            <Button variant="outline" size="lg" asChild><a href={resumeAsset.url} download="Nilesh_Chatap_Resume.pdf"><Download /> Download Resume</a></Button>
             <Button variant="ghost" size="lg" asChild><a href="#contact"><Mail /> Contact Me</a></Button>
           </div>
           <SocialLinks />
@@ -166,7 +167,7 @@ function Certifications() {
 }
 
 function Resume() {
-  return <section id="resume" className="section-shell section-pad resume-section"><div className="content-wrap"><div className="resume-panel reveal"><div className="resume-icon"><FileText /></div><div><span className="section-kicker"><span />Professional profile</span><h2>My Resume</h2><p>Explore my education, experience, projects, technical skills, certifications and achievements.</p></div><div className="action-row"><Button variant="premium" size="lg" disabled title="Resume PDF has not been uploaded"><ExternalLink />View Resume</Button><Button variant="outline" size="lg" disabled title="Resume PDF has not been uploaded"><Download />Download Resume</Button></div><small>Resume file awaiting upload: Nilesh_Chatap_Resume.pdf</small></div></div></section>;
+  return <section id="resume" className="section-shell section-pad resume-section"><div className="content-wrap"><div className="resume-panel reveal"><div className="resume-icon"><FileText /></div><div><span className="section-kicker"><span />Professional profile</span><h2>My Resume</h2><p>Explore my education, experience, projects, technical skills, certifications and achievements.</p></div><div className="action-row"><Button variant="premium" size="lg" asChild><a href={resumeAsset.url} target="_blank" rel="noopener noreferrer"><ExternalLink />View Resume</a></Button><Button variant="outline" size="lg" asChild><a href={resumeAsset.url} download="Nilesh_Chatap_Resume.pdf"><Download />Download Resume</a></Button></div><small>Nilesh_Chatap_Resume.pdf</small></div></div></section>;
 }
 
 function Contact() {
