@@ -3,6 +3,7 @@ import resumeImage from "@/assets/project-resume.jpg";
 import supportImage from "@/assets/project-support.jpg";
 import voiceImage from "@/assets/project-voice.jpg";
 import analyticsImage from "@/assets/project-analytics.jpg";
+import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 
 export const navigation = ["Home", "About", "Education", "Experience", "Projects", "Skills", "Publications", "Certifications", "Resume", "Contact"];
 
@@ -23,8 +24,10 @@ export const education = [
   { institution: "HSC (12th Grade)", qualification: "First Class", period: "2023 – 2024", location: "Maharashtra, India" },
 ];
 
-export const experiences = [
-  { company: "Infosys Springboard", role: "Artificial Intelligence Intern", period: "Feb 2026 – Apr 2026", location: "Remote", points: ["Built AI and Generative AI projects using Python, TensorFlow, PyTorch, NumPy, and Scikit-learn.", "Developed an Email Classification AI Agent using Prompt Engineering and Large Language Models (LLMs).", "Improved AI model performance through evaluation, testing, and iterative optimization.", "Worked on AI Agents and real-world Generative AI applications."] },
+export type Experience = { company: string; role: string; period: string; location: string; points: string[]; certificateUrl?: string };
+
+export const experiences: Experience[] = [
+  { company: "Infosys Springboard", role: "Artificial Intelligence Intern", period: "Feb 2026 – Apr 2026", location: "Remote", certificateUrl: infosysCertificate.url, points: ["Built AI and Generative AI projects using Python, TensorFlow, PyTorch, NumPy, and Scikit-learn.", "Developed an Email Classification AI Agent using Prompt Engineering and Large Language Models (LLMs).", "Improved AI model performance through evaluation, testing, and iterative optimization.", "Worked on AI Agents and real-world Generative AI applications."] },
   { company: "IBM SkillsBuild", role: "AIML Intern", period: "Dec 2025 – Jan 2026", location: "Remote", points: ["Built Machine Learning models using Python on real-world datasets.", "Performed preprocessing, analysis, and evaluation using AI/ML techniques.", "Completed internship onboarding and AI learning modules successfully."] },
   { company: "Google Student Ambassador", role: "Campus Representative", period: "Sept 2025 – Feb 2026", location: "Remote", points: ["Promoted awareness and adoption of Google AI tools among students.", "Explored AI platforms including Google Gemini and emerging AI technologies."] },
   { company: "Elevate Labs", role: "Data Analyst Intern", period: "Sept 2025 – Nov 2025", location: "Remote", points: ["Built Power BI dashboards for KPI tracking and business insights.", "Used Python, Pandas, Excel, and Power BI for data analysis and visualization."] },

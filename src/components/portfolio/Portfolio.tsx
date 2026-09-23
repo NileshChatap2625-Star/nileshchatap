@@ -9,9 +9,18 @@ import {
 import { Button } from "@/components/ui/button";
 import { categories, certifications, education, experiences, navigation, projects, skills, socialProfiles } from "./data";
 
-type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean };
+type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean; href?: string | undefined };
 
-function LinkPlaceholder({ label, icon, compact = false }: LinkPlaceholderProps) {
+function LinkPlaceholder({ label, icon, compact = false, href }: LinkPlaceholderProps) {
+  if (href) {
+    return (
+      <Button type="button" variant="outline" size={compact ? "sm" : "default"} asChild>
+        <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`${label} (opens in a new tab)`}>
+          {icon}{label}
+        </a>
+      </Button>
+    );
+  }
   return (
     <Button type="button" variant="outline" size={compact ? "sm" : "default"} disabled title={`${label} link has not been added yet`}>
       {icon}{label}<span className="sr-only"> — link not added</span>
@@ -143,7 +152,7 @@ function Education() {
 }
 
 function Experience() {
-  return <section id="experience" className="section-shell section-pad"><div className="content-wrap"><SectionHeading kicker="Professional journey" title="Experience" description="Practical work across artificial intelligence, analytics, automation and student advocacy." /><div className="timeline experience-timeline">{experiences.map((item, i) => <article className="timeline-item reveal" key={item.company}><div className="timeline-node"><BriefcaseBusiness /></div><div className="timeline-card"><div className="timeline-meta"><span>{item.period}</span><span><MapPin />{item.location}</span></div><p className="timeline-index">0{i + 1} / EXPERIENCE</p><h3>{item.company}</h3><h4>{item.role}</h4><ul>{item.points.map(point => <li key={point}><CheckCircle2 />{point}</li>)}</ul><LinkPlaceholder compact label="View Certificate" icon={<Award />} /></div></article>)}</div></div></section>;
+  return <section id="experience" className="section-shell section-pad"><div className="content-wrap"><SectionHeading kicker="Professional journey" title="Experience" description="Practical work across artificial intelligence, analytics, automation and student advocacy." /><div className="timeline experience-timeline">{experiences.map((item, i) => <article className="timeline-item reveal" key={item.company}><div className="timeline-node"><BriefcaseBusiness /></div><div className="timeline-card"><div className="timeline-meta"><span>{item.period}</span><span><MapPin />{item.location}</span></div><p className="timeline-index">0{i + 1} / EXPERIENCE</p><h3>{item.company}</h3><h4>{item.role}</h4><ul>{item.points.map(point => <li key={point}><CheckCircle2 />{point}</li>)}</ul><LinkPlaceholder compact label="View Certificate" icon={<Award />} href={item.certificateUrl} /></div></article>)}</div></div></section>;
 }
 
 function Projects() {
