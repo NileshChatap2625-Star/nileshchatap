@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { categories, certifications, education, experiences, navigation, projects, skills, socialProfiles } from "./data";
 
-type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean; href?: string };
+type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean; href?: string | undefined };
 
 function LinkPlaceholder({ label, icon, compact = false, href }: LinkPlaceholderProps) {
   if (href) {
