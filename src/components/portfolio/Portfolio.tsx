@@ -9,9 +9,18 @@ import {
 import { Button } from "@/components/ui/button";
 import { categories, certifications, education, experiences, navigation, projects, skills, socialProfiles } from "./data";
 
-type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean };
+type LinkPlaceholderProps = { label: string; icon?: React.ReactNode; compact?: boolean; href?: string };
 
-function LinkPlaceholder({ label, icon, compact = false }: LinkPlaceholderProps) {
+function LinkPlaceholder({ label, icon, compact = false, href }: LinkPlaceholderProps) {
+  if (href) {
+    return (
+      <Button type="button" variant="outline" size={compact ? "sm" : "default"} asChild>
+        <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`${label} (opens in a new tab)`}>
+          {icon}{label}
+        </a>
+      </Button>
+    );
+  }
   return (
     <Button type="button" variant="outline" size={compact ? "sm" : "default"} disabled title={`${label} link has not been added yet`}>
       {icon}{label}<span className="sr-only"> — link not added</span>
