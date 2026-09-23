@@ -154,7 +154,7 @@ function Projects() {
 
 function Skills() {
   const icons = [Code2, Layers3, BrainCircuit, Database, Terminal, UserRound];
-  return <section id="skills" className="section-shell section-pad"><div className="content-wrap"><SectionHeading kicker="Technical toolkit" title="Skills & capabilities" description="The technologies and working habits I use to turn data and ideas into useful systems." /><div className="skills-grid">{skills.map((skill, i) => { const Icon = icons[i]; return <article className="skill-card reveal" key={skill.group}><div className="skill-heading"><Icon /><h3>{skill.group}</h3></div><div className="skill-list">{skill.items.map(item => <span key={item}>{item}</span>)}</div></article>; })}</div></div></section>;
+  return <section id="skills" className="section-shell section-pad"><div className="content-wrap"><SectionHeading kicker="Technical toolkit" title="Skills & capabilities" description="The technologies and working habits I use to turn data and ideas into useful systems." /><div className="skills-grid">{skills.map((skill, i) => { const Icon = icons[i] ?? Code2; return <article className="skill-card reveal" key={skill.group}><div className="skill-heading"><Icon /><h3>{skill.group}</h3></div><div className="skill-list">{skill.items.map(item => <span key={item}>{item}</span>)}</div></article>; })}</div></div></section>;
 }
 
 function Publications() {
