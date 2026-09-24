@@ -38,8 +38,14 @@ export const experiences: Experience[] = [
 
 export const categories = ["All", "Artificial Intelligence", "Machine Learning", "Generative AI", "AI Agents", "Data Science", "Data Analytics", "Automation"];
 
-export const projects = [
-  { title: "Ambient Email Assistant", subtitle: "AI Agent", year: "2026", description: "An intelligent AI email assistant designed for automated email processing and workflow automation.", technologies: ["Python", "LLMs", "NLP", "Automation"], categories: ["Artificial Intelligence", "Generative AI", "AI Agents", "Automation"], features: ["Gmail API / IMAP email processing", "Entity extraction and sentiment analysis", "Category-wise classification and response generation", "Flask / FastAPI interactive prototype"], image: emailImage },
+export type Project = {
+  title: string; subtitle: string; year: string; description: string;
+  technologies: string[]; categories: string[]; features: string[]; image: string;
+  githubUrl?: string; projectUrl?: string;
+};
+
+export const projects: Project[] = [
+  { title: "Ambient Email Assistant", subtitle: "AI Agent", year: "2026", description: "An intelligent AI email assistant designed for automated email processing and workflow automation.", technologies: ["Python", "LLMs", "NLP", "Automation"], categories: ["Artificial Intelligence", "Generative AI", "AI Agents", "Automation"], features: ["Gmail API / IMAP email processing", "Entity extraction and sentiment analysis", "Category-wise classification and response generation", "Flask / FastAPI interactive prototype"], image: emailImage, githubUrl: "https://github.com/Joshika-Mentor/AI_Building-an-Ambient-Agent-with-LangGraph-for-an-Email-Assistant/tree/nileshchatap", projectUrl: "https://emailsortai.lovable.app" },
   { title: "FindInternship", subtitle: "AI + ATS Resume Analyzer", year: "2026", description: "An AI-powered platform for resume analysis, ATS scoring and personalized internship recommendations.", technologies: ["Python", "LLMs", "NLP", "FastAPI", "PostgreSQL"], categories: ["Artificial Intelligence", "Machine Learning", "Generative AI", "Data Science"], features: ["Resume upload and ATS scoring", "Skill and experience extraction", "LLM-based resume suggestions", "Internship recommendations and tracking dashboard"], image: resumeImage },
   { title: "SmartHelp AI", subtitle: "Enterprise Support Agent", year: "2026", description: "An autonomous AI customer support agent designed to perform reasoning, task execution and decision-making workflows.", technologies: ["Python", "AI Agents", "Kaggle"], categories: ["Artificial Intelligence", "Generative AI", "AI Agents"], features: ["Kaggle AI Agents framework", "Autonomous reasoning and task execution", "Prompt Engineering and evaluation metrics", "Kaggle AI Agents Capstone badge"], image: supportImage },
   { title: "JARVIS AI Control", subtitle: "Voice Automation", year: "2025", description: "A voice-controlled AI assistant designed for automation and system-level tasks.", technologies: ["Python", "Speech Recognition", "TTS"], categories: ["Artificial Intelligence", "Automation"], features: ["Speech recognition and text-to-speech", "Real-time voice interaction", "Automation and system tasks", "Modular architecture for future expansion"], image: voiceImage },
