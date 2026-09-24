@@ -5,6 +5,7 @@ import voiceImage from "@/assets/project-voice.jpg";
 import analyticsImage from "@/assets/project-analytics.jpg";
 import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json";
+import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
 
 export const navigation = ["Home", "About", "Education", "Experience", "Projects", "Skills", "Publications", "Certifications", "Resume", "Contact"];
 
