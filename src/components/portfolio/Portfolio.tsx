@@ -1,4 +1,5 @@
 import resumeAsset from "@/assets/Nilesh_Chatap_Resume.pdf.asset.json";
+import publicationCertificate from "@/assets/ijarset-publication-certificate.png.asset.json";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import {
   ArrowDown, ArrowRight, Award, BookOpen, BriefcaseBusiness, CheckCircle2,
@@ -172,7 +173,7 @@ function Skills() {
 }
 
 function Publications() {
-  return <section id="publications" className="section-shell section-pad alt-section"><div className="content-wrap"><SectionHeading kicker="Research" title="Publication" description="Exploring how data reveals patterns in digital audiences and content performance." /><article className="publication-card reveal"><div className="publication-mark"><BookOpen /><span>2026</span></div><div><span className="eyebrow">Research publication</span><h3>YouTube Trending Video Analytics</h3><p className="publication-by">Nilesh Chatap · International Journal of Advanced Research in Science, Engineering and Technology (IJARSET)</p><p>Research focused on YouTube trending datasets, engagement analysis, and audience behavior insights.</p><div className="action-row"><LinkPlaceholder label="View Publication" icon={<ExternalLink />} /><LinkPlaceholder label="View Certificate" icon={<Award />} /></div></div></article></div></section>;
+  return <section id="publications" className="section-shell section-pad alt-section"><div className="content-wrap"><SectionHeading kicker="Research" title="Publication" description="Exploring how data reveals patterns in digital audiences and content performance." /><article className="publication-card reveal"><div className="publication-mark"><BookOpen /><span>2026</span></div><div><span className="eyebrow">Research publication</span><h3>YouTube Trending Video Analytics</h3><p className="publication-by">Nilesh Chatap · International Journal of Advanced Research in Science, Engineering and Technology (IJARSET)</p><p>Research focused on YouTube trending datasets, engagement analysis, and audience behavior insights.</p><div className="action-row"><LinkPlaceholder label="View Publication" icon={<ExternalLink />} href="https://www.ijarset.com/upload/2026/march/08-nilesh-18.pdf" /><LinkPlaceholder label="View Certificate" icon={<Award />} href={publicationCertificate.url} /></div></div></article></div></section>;
 }
 
 function Certifications() {
