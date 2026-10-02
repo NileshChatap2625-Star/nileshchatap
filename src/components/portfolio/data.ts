@@ -53,7 +53,7 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  { group: "Languages", items: ["Python", "C", "SQL"] },
+  { group: "Languages", items: ["Python", "C", "SQL", "Data Structures", "OOP"] },
   { group: "Libraries", items: ["Pandas", "NumPy", "Scikit-learn", "SciPy", "TensorFlow", "PyTorch"] },
   { group: "AI / ML", items: ["Machine Learning", "Artificial Intelligence", "Prompt Engineering", "LLMs", "Generative AI", "AI Agents"] },
   { group: "Databases", items: ["MySQL"] },
