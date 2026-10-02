@@ -1,4 +1,5 @@
 import resumeAsset from "@/assets/Nilesh_Chatap_Resume.pdf.asset.json";
+import publicationCertificate from "@/assets/ijarset-publication-certificate.png.asset.json";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import {
   ArrowDown, ArrowRight, Award, BookOpen, BriefcaseBusiness, CheckCircle2,
