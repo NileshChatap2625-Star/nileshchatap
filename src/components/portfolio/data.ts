@@ -67,6 +67,7 @@ export type Certification = { title: string; issuer: string; certificateUrl?: st
 
 export const certifications: Certification[] = [
   { title: "Artificial Intelligence", issuer: "Infosys", certificateUrl: infosysAiCertificate.url },
+  { title: "Prompt Engineering", issuer: "Infosys", certificateUrl: promptEngineeringCertificate.url },
   { title: "Prompt Engineering", issuer: "Infosys" },
   { title: "Introduction to Generative AI", issuer: "Google Cloud" },
   { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild" },
