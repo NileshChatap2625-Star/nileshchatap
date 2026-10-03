@@ -3,6 +3,7 @@ import resumeImage from "@/assets/project-resume.jpg";
 import supportImage from "@/assets/project-support.jpg";
 import voiceImage from "@/assets/project-voice.jpg";
 import analyticsImage from "@/assets/project-analytics.jpg";
+import infosysAiCertificate from "@/assets/infosys-ai-certificate.png.asset.json";
 import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json";
 import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
@@ -61,6 +62,15 @@ export const skills = [
   { group: "Behavioral Skills", items: ["Leadership", "Team Player", "Analytical Thinking", "Eagerness to Learn"] },
 ];
 
-export const certifications = [
-  ["Artificial Intelligence", "Infosys"], ["Prompt Engineering", "Infosys"], ["Introduction to Generative AI", "Google Cloud"], ["Getting Started with Generative AI", "IBM SkillsBuild"], ["GenAI Powered Data Analytics", "Tata"], ["5-Day Gen AI Intensive Course", "Google"], ["Google Student Ambassador Certification", "Google"], ["Online Python Training Course", ""],
-] as const;
+export type Certification = { title: string; issuer: string; certificateUrl?: string };
+
+export const certifications: Certification[] = [
+  { title: "Artificial Intelligence", issuer: "Infosys", certificateUrl: infosysAiCertificate.url },
+  { title: "Prompt Engineering", issuer: "Infosys" },
+  { title: "Introduction to Generative AI", issuer: "Google Cloud" },
+  { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild" },
+  { title: "GenAI Powered Data Analytics", issuer: "Tata" },
+  { title: "5-Day Gen AI Intensive Course", issuer: "Google" },
+  { title: "Google Student Ambassador Certification", issuer: "Google" },
+  { title: "Online Python Training Course", issuer: "" },
+];
