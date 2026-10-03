@@ -6,6 +6,7 @@ import analyticsImage from "@/assets/project-analytics.jpg";
 import infosysAiCertificate from "@/assets/infosys-ai-certificate.png.asset.json";
 import promptEngineeringCertificate from "@/assets/prompt-engineering-certificate.png.asset.json";
 import googleGenAiCertificate from "@/assets/google-genai-certificate.png.asset.json";
+import ibmGenAiCertificate from "@/assets/ibm-getting-started-genai-certificate.png.asset.json";
 import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json";
 import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
