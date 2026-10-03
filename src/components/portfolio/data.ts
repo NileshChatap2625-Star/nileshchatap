@@ -5,6 +5,7 @@ import voiceImage from "@/assets/project-voice.jpg";
 import analyticsImage from "@/assets/project-analytics.jpg";
 import infosysAiCertificate from "@/assets/infosys-ai-certificate.png.asset.json";
 import promptEngineeringCertificate from "@/assets/prompt-engineering-certificate.png.asset.json";
+import googleGenAiCertificate from "@/assets/google-genai-certificate.png.asset.json";
 import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json";
 import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
@@ -68,7 +69,7 @@ export type Certification = { title: string; issuer: string; certificateUrl?: st
 export const certifications: Certification[] = [
   { title: "Artificial Intelligence", issuer: "Infosys", certificateUrl: infosysAiCertificate.url },
   { title: "Prompt Engineering", issuer: "Infosys", certificateUrl: promptEngineeringCertificate.url },
-  { title: "Introduction to Generative AI", issuer: "Google Cloud" },
+  { title: "Introduction to Generative AI", issuer: "Google Cloud", certificateUrl: googleGenAiCertificate.url },
   { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild" },
   { title: "GenAI Powered Data Analytics", issuer: "Tata" },
   { title: "5-Day Gen AI Intensive Course", issuer: "Google" },
