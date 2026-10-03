@@ -177,7 +177,7 @@ function Publications() {
 }
 
 function Certifications() {
-  return <section id="certifications" className="section-shell section-pad"><div className="content-wrap wide"><SectionHeading kicker="Continuous learning" title="Certifications" description="Focused learning across artificial intelligence, prompt engineering, generative AI and Python." /><div className="cert-grid">{certifications.map(([title, issuer] = cert, i) => ...
+  return <section id="certifications" className="section-shell section-pad"><div className="content-wrap wide"><SectionHeading kicker="Continuous learning" title="Certifications" description="Focused learning across artificial intelligence, prompt engineering, generative AI and Python." /><div className="cert-grid">{certifications.map((cert, i) => <article className="cert-card reveal" key={cert.title}><div className="cert-icon"><Award /></div><span>0{String(i + 1).padStart(2, "0")}</span><h3>{cert.title}</h3><p>{cert.issuer || "Certificate issuer not specified"}</p><LinkPlaceholder compact label="View Certificate" icon={<ExternalLink />} href={cert.certificateUrl} /></article>)}</div></div></section>;
 }
 
 function Resume() {
