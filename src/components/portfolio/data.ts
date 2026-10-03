@@ -71,7 +71,7 @@ export const certifications: Certification[] = [
   { title: "Artificial Intelligence", issuer: "Infosys", certificateUrl: infosysAiCertificate.url },
   { title: "Prompt Engineering", issuer: "Infosys", certificateUrl: promptEngineeringCertificate.url },
   { title: "Introduction to Generative AI", issuer: "Google Cloud", certificateUrl: googleGenAiCertificate.url },
-  { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild" },
+  { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild", certificateUrl: ibmGenAiCertificate.url },
   { title: "GenAI Powered Data Analytics", issuer: "Tata" },
   { title: "5-Day Gen AI Intensive Course", issuer: "Google" },
   { title: "Google Student Ambassador Certification", issuer: "Google" },
