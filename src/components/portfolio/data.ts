@@ -10,6 +10,7 @@ import ibmGenAiCertificate from "@/assets/ibm-getting-started-genai-certificate.
 import infosysCertificate from "@/assets/infosys-springboard-certificate.png.asset.json";
 import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json";
 import tataGenAiCertificate from "@/assets/tata-genai-analytics-certificate.png.asset.json";
+import googleAiAgentsCertificate from "@/assets/google-ai-agents-intensive-certificate.png.asset.json";
 import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
 import elevateLabsCertificate from "@/assets/elevate-labs-certificate.png.asset.json";
 
