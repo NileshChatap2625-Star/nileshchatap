@@ -75,7 +75,7 @@ export const certifications: Certification[] = [
   { title: "Introduction to Generative AI", issuer: "Google Cloud", certificateUrl: googleGenAiCertificate.url },
   { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild", certificateUrl: ibmGenAiCertificate.url },
   { title: "GenAI Powered Data Analytics", issuer: "Tata", certificateUrl: tataGenAiCertificate.url },
-  { title: "5-Day Gen AI Intensive Course", issuer: "Google" },
+  { title: "5-Day Gen AI Intensive Course", issuer: "Google", certificateUrl: googleAiAgentsCertificate.url },
   { title: "Google Student Ambassador Certification", issuer: "Google" },
   { title: "Online Python Training Course", issuer: "" },
 ];
