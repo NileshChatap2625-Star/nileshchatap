@@ -12,6 +12,7 @@ import ibmCertificate from "@/assets/ibm-skillsbuild-certificate.png.asset.json"
 import tataGenAiCertificate from "@/assets/tata-genai-analytics-certificate.png.asset.json";
 import googleAiAgentsCertificate from "@/assets/google-ai-agents-intensive-certificate.png.asset.json";
 import googleAmbassadorCertificate from "@/assets/google-ambassador-certificate.png.asset.json";
+import googleAmbassadorParticipationCertificate from "@/assets/google-ambassador-participation-certificate.png.asset.json";
 import elevateLabsCertificate from "@/assets/elevate-labs-certificate.png.asset.json";
 
 export const navigation = ["Home", "About", "Education", "Experience", "Projects", "Skills", "Publications", "Certifications", "Resume", "Contact"];
@@ -76,6 +77,6 @@ export const certifications: Certification[] = [
   { title: "Getting Started with Generative AI", issuer: "IBM SkillsBuild", certificateUrl: ibmGenAiCertificate.url },
   { title: "GenAI Powered Data Analytics", issuer: "Tata", certificateUrl: tataGenAiCertificate.url },
   { title: "5-Day Gen AI Intensive Course", issuer: "Google", certificateUrl: googleAiAgentsCertificate.url },
-  { title: "Google Student Ambassador Certification", issuer: "Google" },
+  { title: "Google Student Ambassador Certification", issuer: "Google", certificateUrl: googleAmbassadorParticipationCertificate.url },
   { title: "Online Python Training Course", issuer: "" },
 ];
